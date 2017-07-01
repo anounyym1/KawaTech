@@ -21,6 +21,9 @@
 	width: 100%    !important;
 	height: auto   !important;
     }
+	video::-webkit-media-controls-fullscreen-button, video::-webkit-media-controls-play-button, video::-webkit-media-controls-pausebutton {
+    display: none;
+	}
     .footer {
 	position: absolute;
 	bottom: 0;
@@ -50,9 +53,11 @@
 
         <div class="row">
 	<video
+	  controls
 	  src="https://stream.kawacon.info/hls/main.m3u8"
 	  data-viblast-key="b6a95a9c-cefd-4263-87a7-5a4af5a641be"
 	  autoplay
+	  poster
 	>
 
 	</video>
